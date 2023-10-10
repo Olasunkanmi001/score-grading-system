@@ -42,13 +42,13 @@ function lit() {
 
 
 function add() {
-    document.getElementById("total").value = em /5;
+    document.getElementById("total").value = em /5
+    if (tota > 50) {
+        document.getElementById("chng").innerText = "average studen spend more time studying"
+   }
+   else {
+       document.getElementById("chng").innerText = "poor result you will have to repeat this class"
+   
+   }
 }
 var tota = document.getElementById("total").value
-if (tota > 50) {
-     document.getElementById("chng").innerText = "average studen spend more time studying"
-}
-else {
-    document.getElementById("chng").innerText = "poor result you will have to repeat this class"
-
-}
